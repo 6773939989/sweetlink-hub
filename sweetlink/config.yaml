@@ -1,0 +1,28 @@
+name: Sweetlink
+version: "0.1.38"
+slug: sweetlink
+description: Il collegamento fra un impianto Sweetplace e i servizi dell'azienda
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: application
+boot: auto
+homeassistant: "2026.4.3"
+options:
+  log_level: info
+  backend_base_url: ""
+schema:
+  log_level: list(debug|info|warning|error)
+  backend_base_url: str?
+homeassistant_api: true
+hassio_api: true
+host_network: true
+ingress: true
+ingress_port: 45120
+panel_icon: mdi:lan-connect
+panel_admin: false
+map:
+  - all_app_configs:rw
+  - homeassistant_config:rw
+image: ghcr.io/6773939989/sweetlink-hub/{arch}

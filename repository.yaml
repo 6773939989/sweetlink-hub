@@ -1,0 +1,14 @@
+---
+# QUESTO E' IL MANIFESTO DELL'ARCHIVIO, NON DELL'ADD-ON.
+#
+# Home Assistant lo legge dopo aver clonato l'archivio e ne mostra i tre campi nell'elenco degli
+# archivi. Il campo `url` NON e' quello da cui si scarica: quello e' l'indirizzo git che si digita
+# quando si aggiunge l'archivio, e il Supervisor se lo tiene per se'. Qui ci va lo stesso indirizzo
+# git, perche' l'elenco mostri una riga da cui si arriva davvero da qualche parte.
+#
+# QUESTO FILE FINISCE SUL REPOSITORY PUBBLICO cosi' com'e', commenti compresi, come tutti i file
+# della lista bianca di .github/workflows/publish-hub-manifest.yaml: dei file pubblici si genera
+# soltanto il manifesto dell'add-on. Non scriverci dentro niente di interno.
+name: Sweetplace
+url: https://github.com/6773939989/sweetlink-hub
+maintainer: Sweetplace Team <support@sweetplace.me>
