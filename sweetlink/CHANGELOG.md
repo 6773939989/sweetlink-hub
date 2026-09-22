@@ -3,6 +3,10 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.39
+
+- Manutenzione interna: nessuna novità per chi usa l'impianto.
+
 ## 0.1.38
 
 - L'assistenza può aggiornare l'app Sweetlink da remoto, con una copia di sicurezza fatta prima.
