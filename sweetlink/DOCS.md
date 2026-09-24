@@ -17,7 +17,8 @@ ci trova solo quello che lo riguarda.
 
 ## Aggiornamenti
 
-L'apparecchio si aggiorna da solo. Non c'è niente da premere, e non serve che qualcuno se ne occupi.
+Gli aggiornamenti li fa il team Sweetplace, dopo averli provati. Non c'è niente da premere, e non
+serve che qualcuno se ne occupi.
 
 ## Assistenza
 

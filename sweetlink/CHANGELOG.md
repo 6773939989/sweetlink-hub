@@ -3,6 +3,18 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.41
+
+- L'app controlla da sola le impostazioni di Home Assistant che servono all'accesso da fuori casa e
+  alla protezione contro i tentativi di accesso ripetuti. Prima di correggerle mette da parte una copia
+  del file che le contiene, quando il file c'è già, e di solito Home Assistant si riavvia una volta; se
+  qualcosa non va, rimette tutto com'era e avvisa l'assistenza.
+
+## 0.1.40
+
+- Se Home Assistant blocca un indirizzo dopo troppe password sbagliate, la casa lo vede con parole
+  semplici — una notifica e un avviso nel pannello — e l'assistenza potrà sbloccarlo dalla console.
+
 ## 0.1.39
 
 - Manutenzione interna: nessuna novità per chi usa l'impianto.
