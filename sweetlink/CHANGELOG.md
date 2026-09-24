@@ -3,6 +3,11 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.42
+
+- Il pulsante del pannello per registrare l'apparecchio porta direttamente alla sua pagina di
+  registrazione, anche su un computer dove si è già aperta un'altra casa.
+
 ## 0.1.41
 
 - L'app controlla da sola le impostazioni di Home Assistant che servono all'accesso da fuori casa e
