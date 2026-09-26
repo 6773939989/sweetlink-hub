@@ -3,6 +3,13 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.43
+
+- Prima di preparare un nuovo impianto, il controllo finale avvisa se Home Assistant è collegato a un
+  account Home Assistant Cloud, e spiega come scollegarlo.
+- Quando l'accesso dell'assistenza o dell'installatore si richiude, l'app non lascia più messaggi
+  d'errore inutili nel registro di Home Assistant.
+
 ## 0.1.42
 
 - Il pulsante del pannello per registrare l'apparecchio porta direttamente alla sua pagina di
