@@ -3,6 +3,11 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.44
+
+- Durante gli aggiornamenti l'app annota meglio nel suo registro cosa sta succedendo, così
+  l'assistenza capisce più in fretta perché un aggiornamento non è partito.
+
 ## 0.1.43
 
 - Prima di preparare un nuovo impianto, il controllo finale avvisa se Home Assistant è collegato a un
