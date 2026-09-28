@@ -3,6 +3,12 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.45
+
+- Dai prossimi aggiornamenti in poi, quando l'assistenza aggiorna l'app da remoto e l'aggiornamento
+  riesce, la sua console lo mostra come riuscito e non più come rifiutato. Questo aggiornamento, che
+  installa la correzione, può ancora risultare rifiutato anche se è andato bene.
+
 ## 0.1.44
 
 - Durante gli aggiornamenti l'app annota meglio nel suo registro cosa sta succedendo, così
