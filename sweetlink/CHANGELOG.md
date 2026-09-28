@@ -3,6 +3,15 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.47
+
+- Quando l'assistenza aggiorna da remoto Home Assistant, l'app o il programma che governa la casa,
+  l'app le dice a che punto è l'aggiornamento mentre succede, con la percentuale dello scaricamento
+  quando Home Assistant la dà. Quando Home Assistant riparte lo dice subito, e poi controlla ancora
+  per qualche minuto che resti acceso prima di dare l'aggiornamento per concluso.
+- L'app ora chiede il programma che governa la casa nello stesso modo in cui si collega già
+  all'assistenza. Dovrebbe sparire il rifiuto che sull'impianto di prova fermava l'invio da remoto.
+
 ## 0.1.46
 
 - L'assistenza può aggiornare da remoto il programma che governa la casa. Prima di installarlo l'app
