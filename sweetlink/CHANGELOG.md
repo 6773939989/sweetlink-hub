@@ -3,6 +3,13 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.48
+
+- Quando l'assistenza aggiorna da remoto il programma che governa la casa, mentre aspetta che il
+  programma nuovo si avvii l'app manda all'assistenza, passo per passo, cosa vede. Se capisce subito
+  che non sta girando il programma giusto, rimette quello di prima senza aspettare dieci minuti,
+  e manda il perché.
+
 ## 0.1.47
 
 - Quando l'assistenza aggiorna da remoto Home Assistant, l'app o il programma che governa la casa,
