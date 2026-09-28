@@ -3,6 +3,12 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.46
+
+- L'assistenza può aggiornare da remoto il programma che governa la casa. Prima di installarlo l'app
+  controlla che sia proprio quello mandato; dopo, controlla che funzioni, e se non funziona rimette
+  da sola quello di prima.
+
 ## 0.1.45
 
 - Dai prossimi aggiornamenti in poi, quando l'assistenza aggiorna l'app da remoto e l'aggiornamento
