@@ -3,6 +3,15 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.49
+
+- Quando un aggiornamento chiesto dall'assistenza non va a buon fine, o l'app incontra un problema,
+  l'app manda da sola all'assistenza il pezzo del suo registro che serve a capire cosa è successo:
+  non serve più copiarlo a mano. Prima di mandarlo toglie chiavi e password, nelle forme che
+  conosce.
+- Quando serve, l'assistenza può leggere dalla sua console il registro dell'app e quello del
+  programma che governa la casa; quello che legge così non viene conservato.
+
 ## 0.1.48
 
 - Quando l'assistenza aggiorna da remoto il programma che governa la casa, mentre aspetta che il
