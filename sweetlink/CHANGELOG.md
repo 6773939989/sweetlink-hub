@@ -3,6 +3,31 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.50
+
+- Prima di installare da remoto una nuova versione del programma che governa la casa, l'app
+  controlla che NetDaemon e MariaDB, i due componenti su cui il programma si appoggia, siano
+  abbastanza recenti. Se non lo sono non installa niente, a meno che l'assistenza chieda di
+  aggiornarli prima.
+- Quando li aggiorna, spegne il programma della casa una volta sola: aggiorna prima MariaDB, poi
+  NetDaemon, e lo riaccende solo quando MariaDB ha davvero finito di sistemare i suoi dati. Prima di
+  aggiornare MariaDB l'app ne fa una copia di sicurezza, che resta fra le copie di sicurezza
+  dell'impianto con un nome che comincia per «Sweetlink»; se l'aggiornamento di MariaDB non riesce,
+  l'app rimette da sola la copia e il programma di prima, e se neanche questo riesce il programma della
+  casa resta spento e l'assistenza lo sa. Di NetDaemon la copia la fa Home Assistant.
+- Durante l'aggiornamento l'app dice all'assistenza a che punto è e da quanto tempo la casa è senza
+  programma, e l'assistenza può interromperlo: l'app rimette le cose com'erano dove si può.
+- Mentre il programma della casa si aggiorna, l'app non accetta aggiornamenti di se stessa né di
+  Home Assistant; e non aggiorna il programma mentre Home Assistant o un'altra app si stanno
+  aggiornando, anche se l'aggiornamento l'ha chiesto qualcuno dall'impianto. Aspetta anche che Home
+  Assistant finisca le sue copie di sicurezza: prima di aggiornare qualcosa Home Assistant ne fa una, e
+  se la manda a un servizio di backup esterno ci possono volere minuti, in cui il Supervisor non mostra
+  ancora niente. Per saperlo l'app chiede a Home Assistant di avvisarla; se Home Assistant non lo
+  permette, l'app lo scrive nel suo registro e guarda solo il Supervisor, e quei minuti restano
+  scoperti.
+- L'app dice all'assistenza quali versioni di NetDaemon e MariaDB sono installate e quali sono le
+  ultime disponibili.
+
 ## 0.1.49
 
 - Quando un aggiornamento chiesto dall'assistenza non va a buon fine, o l'app incontra un problema,
