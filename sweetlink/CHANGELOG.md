@@ -3,6 +3,11 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.51
+
+- L'app è pronta per la versione di Home Assistant in uso negli impianti.
+- Dopo l'aggiornamento di Home Assistant l'accesso da fuori casa torna a funzionare.
+
 ## 0.1.50
 
 - Prima di installare da remoto una nuova versione del programma che governa la casa, l'app

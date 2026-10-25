@@ -1,5 +1,5 @@
 name: Sweetlink
-version: "0.1.50"
+version: "0.1.51"
 slug: sweetlink
 description: Il collegamento fra un impianto Sweetplace e i servizi dell'azienda
 arch:
@@ -8,7 +8,7 @@ arch:
 init: false
 startup: application
 boot: auto
-homeassistant: "2026.4.3"
+homeassistant: "2026.9.4"
 options:
   log_level: info
   backend_base_url: ""
