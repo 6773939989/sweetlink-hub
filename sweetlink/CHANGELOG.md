@@ -3,6 +3,20 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.52
+
+- Quando l'assistenza aggiorna da remoto il programma che governa la casa, l'app considera il
+  programma nuovo partito bene quando il programma stesso dice di aver finito di avviarsi. Prima
+  aspettava anche che uno dei suoi automatismi fosse già scattato: in una casa con pochi automatismi
+  poteva non succedere affatto, e l'app rimetteva il programma di prima anche se quello nuovo
+  funzionava.
+- Se in quel momento l'impianto sta facendo o ripristinando una copia di sicurezza, o il suo sistema
+  sta ripartendo, l'app aspetta che abbia finito prima di riaccendere il programma della casa, di
+  aggiornare NetDaemon e MariaDB o di rimettere MariaDB com'era, e lo dice all'assistenza. Prima, in
+  quel caso, il programma della casa poteva restare spento.
+- Se MariaDB è acceso ma non ha ancora detto a Home Assistant di essere pronto, l'app non aggiorna il
+  programma della casa e spiega all'assistenza cosa fare: riavviare MariaDB e riprovare.
+
 ## 0.1.51
 
 - L'app è pronta per la versione di Home Assistant in uso negli impianti.
