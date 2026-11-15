@@ -3,6 +3,35 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.56
+
+- L'assistenza di Sweetplace può leggere dalla sua console cosa è installato sul tuo impianto: le
+  applicazioni, le integrazioni e ciò che HACS ha scaricato, con le loro versioni, e gli avvisi che
+  Home Assistant mostra fra le riparazioni. La lettura parte solo quando l'assistenza la chiede, e non
+  cambia niente in casa. I nomi che hai dato alle integrazioni non vengono inviati. Il testo di un
+  errore di un'integrazione sì, e può contenere l'indirizzo di un dispositivo della tua rete di casa.
+
+## 0.1.55
+
+- L'app dice all'assistenza da dove l'impianto riceve i suoi aggiornamenti: dalla versione di
+  produzione di Sweetplace, dalla versione di prova, o da un'altra fonte. Dice anche quanti degli altri
+  programmi installati non arrivano dal catalogo di Sweetplace. Per chi abita la casa non cambia
+  niente.
+- Prima di preparare un nuovo impianto da copiare, il controllo finale mostra da quale versione
+  l'impianto riceve gli aggiornamenti, e l'impianto si prepara solo se è quella di produzione. Per
+  confermare, la parola da scrivere nel pannello diventa PRODUZIONE.
+
+## 0.1.54
+
+- Nessuna novità per chi usa l'impianto: controlli in più prima che una versione nuova venga
+  distribuita.
+
+## 0.1.53
+
+- Con Google Home collegato, l'app Google Home mostra i dispositivi scelti per i comandi vocali, con
+  i loro nomi e le loro stanze, e li può accendere, spegnere e leggere. Quando un dispositivo cambia
+  stato in casa, l'app Google Home lo vede da sola, senza doverla riaprire.
+
 ## 0.1.52
 
 - Quando l'assistenza aggiorna da remoto il programma che governa la casa, l'app considera il

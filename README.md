@@ -24,4 +24,4 @@ support@sweetplace.me
 Il contenuto di questo repository è generato automaticamente: le modifiche fatte qui vengono
 sovrascritte alla pubblicazione successiva.
 
-© 2026 M2R S.r.l. Tutti i diritti riservati.
+© 2026 Sweetplace Srl SB. Tutti i diritti riservati.
