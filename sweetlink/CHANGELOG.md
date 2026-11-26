@@ -3,6 +3,12 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.69
+
+- Se Cloudflare non riconosce più il collegamento verso Internet dell'apparecchio, Sweetlink se ne accorge
+  da solo e se ne fa dare uno nuovo. Prima l'apparecchio restava irraggiungibile da fuori casa finché
+  qualcuno non riavviava Sweetlink.
+
 ## 0.1.68
 
 - Il pannello di Sweetlink usa una porta nuova, che le connessioni verso Internet dell'apparecchio non
