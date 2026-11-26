@@ -3,6 +3,85 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.67
+
+- Il registro di Sweetlink dice anche per Alexa, come già per Google, quando manca l'elenco dei
+  dispositivi per i comandi vocali, e quando torna.
+
+## 0.1.66
+
+- I comandi vocali con Alexa usano ora l'elenco dei dispositivi preparato dal sistema Sweetplace, lo
+  stesso di Google.
+- Sweetlink controlla da solo che Home Assistant sappia dove trovare i dispositivi per Alexa e Google, e se
+  qualcosa manca lo sistema e riavvia Home Assistant una volta. Così un file mancante non impedisce più a
+  Home Assistant di ripartire.
+
+## 0.1.65
+
+- Con Alexa collegato, l'app Alexa vede subito quando un dispositivo cambia stato, anche se lo accendi
+  dall'interruttore o con Google. I dispositivi che aggiungi o togli ai comandi vocali compaiono o spariscono
+  in Alexa da soli, senza dover chiedere «Alexa, cerca dispositivi».
+
+## 0.1.64
+
+- L'assistenza di Sweetplace può aggiornare le integrazioni che hai installato con HACS alla versione provata da
+  Sweetplace, tenendo una copia di quella di prima. Home Assistant si riavvia una volta sola, alla fine, se almeno una
+  integrazione è cambiata o potrebbe esserlo.
+
+## 0.1.63
+
+- Prima parte del collegamento con Alexa: Sweetlink sa passare a Home Assistant i comandi che arrivano da Alexa
+  attraverso Sweetplace, e rimandare la risposta. È in prova e non è ancora disponibile nell'app Alexa: niente
+  cambia finché la skill di Sweetplace non viene pubblicata.
+- I dispositivi scelti per Alexa vengono presentati in italiano. Il cambio si applica al prossimo riavvio di
+  Home Assistant.
+- Se i dispositivi scelti per Alexa sono più di 300, il massimo che Amazon accetta, Sweetlink ne presenta i primi
+  300 e lo scrive nel suo registro.
+
+## 0.1.62
+
+- Dopo il passaggio dello Z-Wave alla copia di Sweetplace, la copia riparte da sola a ogni riavvio dell'impianto,
+  anche quando l'add-on del suo autore era impostato per partire a mano.
+- L'add-on dell'autore resta installato e fermo come copia di sicurezza, ma non compare più nel menu laterale di
+  Home Assistant e il sistema non prova più a riavviarlo da solo: acceso accanto alla copia, si contenderebbe con lei
+  la stessa chiavetta Z-Wave. Con «Ripristina» l'assistenza gli rimette tutto com'era.
+- Durante il passaggio e il ripristino, l'assistenza vede da quanti secondi lavora il passo in corso.
+
+## 0.1.61
+
+- Corretto il motivo per cui, con la 0.1.60, il passaggio dello Z-Wave alla copia di Sweetplace si fermava quando
+  doveva ricollegare Home Assistant alla copia: lo Z-Wave restava spento finché l'assistenza non premeva «Ripristina».
+
+## 0.1.60
+
+- L'assistenza di Sweetplace può portare lo Z-Wave del tuo impianto dall'add-on del suo autore alla copia che
+  Sweetplace pubblica nel suo archivio, con le stesse chiavi e gli stessi dispositivi. Lo fa dalla sua console, su
+  una casa alla volta, e lo Z-Wave si ferma per qualche minuto. L'add-on dell'autore resta installato e fermo, come
+  copia di sicurezza, e l'assistenza può tornare indietro con «Ripristina». Se la copia non parte, Sweetlink manda
+  all'assistenza le ultime righe del suo registro, al più 200.
+- Per farlo Sweetlink dichiara al sistema un permesso in più (il ruolo «manager» del Supervisor): gli serve per
+  installare, avviare, fermare e togliere un add-on e per fare e togliere una copia di sicurezza. Sweetlink lo usa
+  solo per il passaggio dello Z-Wave e per l'azzeramento di un impianto da copiare.
+- Prima di preparare un nuovo impianto da copiare, Sweetlink ferma da solo la rete di servizio dell'assistenza. Se la
+  vede accesa e non riesce a fermarla, non cancella niente e lo dice.
+
+## 0.1.59
+
+- Se l'impianto si spegne nei primi minuti dopo l'avvio, Sweetlink non scrive più nel suo registro una riga
+  sbagliata sul collegamento con l'assistenza.
+
+## 0.1.58
+
+- Dalla console il team può aggiornare gli altri add-on all'ultima versione del loro autore, uno alla volta,
+  con una copia di sicurezza prima di ciascuno. Se un add-on non riparte o un'integrazione non torna,
+  l'aggiornamento si ferma lì.
+
+## 0.1.57
+
+- Nell'elenco delle integrazioni che l'assistenza legge c'è anche l'indirizzo a cui ognuna è collegata,
+  per esempio quello del server Z-Wave. Dell'indirizzo si invia solo l'apparecchio e la porta: password,
+  chiavi, codici d'accesso e il resto dell'indirizzo restano sull'impianto e non vengono inviati.
+
 ## 0.1.56
 
 - L'assistenza di Sweetplace può leggere dalla sua console cosa è installato sul tuo impianto: le
