@@ -3,6 +3,11 @@
 Questo è il testo che Home Assistant mostra quando propone un aggiornamento. Una voce per versione,
 la più recente in cima, scritta per chi ha l'impianto in casa e non per chi lo sviluppa.
 
+## 0.1.68
+
+- Il pannello di Sweetlink usa una porta nuova, che le connessioni verso Internet dell'apparecchio non
+  possono occupare. Prima, in rari casi, il pannello poteva non aprirsi anche per ore.
+
 ## 0.1.67
 
 - Il registro di Sweetlink dice anche per Alexa, come già per Google, quando manca l'elenco dei

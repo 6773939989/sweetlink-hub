@@ -1,5 +1,5 @@
 name: Sweetlink
-version: "0.1.67"
+version: "0.1.68"
 slug: sweetlink
 description: Il collegamento fra un impianto Sweetplace e i servizi dell'azienda
 arch:
@@ -20,7 +20,7 @@ hassio_api: true
 hassio_role: manager
 host_network: true
 ingress: true
-ingress_port: 45120
+ingress_port: 25120
 panel_icon: mdi:lan-connect
 panel_admin: false
 map:
